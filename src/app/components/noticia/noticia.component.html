@@ -1,3 +1,13 @@
-<p>
-  noticia works!
-</p>
+<ion-card color='dark'>
+    <ion-card-header>
+      <ion-card-title class='noticia-title'>{{noticia.title}}</ion-card-title>
+      <ion-card-subtitle>
+          <span class='text-primary'></span>
+          <span class='noticia-source-name'>{{noticia.source.name}}</span>
+        </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img [src]='noticia.urlToImage' *ngIf='noticia.urlToImage'></ion-img>
+    <ion-card-content>
+      <p class='noticia-description'>{{noticia.description}}</p>
+    </ion-card-content>
+</ion-card>
