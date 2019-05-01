@@ -26,3 +26,47 @@
 .noticia-description{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.action-dark, .action-sheet-group{
+    background-color: var(--ion-color-dark) !important;
+    color: white !important;
+}
+.action-dark ion-icon{
+    color: white !important;
+}
+
+// Animaciones
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.fast {
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
